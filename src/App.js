@@ -43,7 +43,7 @@ function Gallery ({selectedBreed}) {
   useEffect(() => {
     const fetchData = async ()=> setBreedImg(await fetchRandomBreedImg(selectedBreed));
     fetchData();
-  }, []);
+  }, [selectedBreed]);
   const changeImage = async selectedBreed => {
     const newImg = await fetchRandomBreedImg(selectedBreed);
     setBreedImg(newImg)
