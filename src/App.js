@@ -10,7 +10,7 @@ const fetchAllBreeds = async () => {
     const breeds = Object.entries(data.message)
     return breeds
   } catch (error) {
-    console.error(error.message)
+    alert(error.message)
   }
 }
 
@@ -47,7 +47,6 @@ function Gallery ({selectedBreed}) {
   const changeImage = async selectedBreed => {
     const newImg = await fetchRandomBreedImg(selectedBreed);
     setBreedImg(newImg)
-    console.log(newImg)
   }
   return (
     <div className='Gallery'>
