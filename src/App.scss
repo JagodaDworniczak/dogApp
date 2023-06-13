@@ -1,3 +1,11 @@
+/* colors */
+$dark-green: #6B9080;
+$light-green: #A4C3B2;
+$mint: #CCE3DE;
+$light-blue: #EAF4F4;
+$light-mint: #F6FFF8;
+
+
 .App {
   display: flex;
   flex-direction: column;
@@ -8,9 +16,7 @@
   top: 0;
   bottom: 0;
   margin: auto;
-  background-color: #ffbd77;
-  background-image: linear-gradient(319deg, #ffbd77 0%, #f0f4a4 37%, #acfcd9 100%);
-
+  background-color: $light-mint;
 }
 
 .App-logo {
@@ -34,7 +40,7 @@
   color: white;
   text-transform: uppercase;
   clip-path: polygon(48% 35%, 80% 10%, 100% 35%, 94% 70%, 80% 90%, 50% 100%, 20% 90%, 4% 70%, 0% 35%, 20% 10%);
-  background-image: linear-gradient(319deg, #acfcd9 0%, #f0f4a4 37%, #ffbd77 100%);
+  background-image: linear-gradient(319deg, $dark-green 0%, $light-green 100%);
 }
 
 .h1{
@@ -42,7 +48,7 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: $light-blue;
 }
 
 @keyframes App-logo-spin {
@@ -66,16 +72,16 @@
   text-transform: uppercase;
   margin-top: 1rem;
   padding: 1rem;
-  background-image: linear-gradient(319deg, #acfcd9 0%, #f0f4a4 17%, #ffbd77 100%);
+  background-color: $dark-green;
   border: none;
-  color: white;
+  color: $light-mint;
   font-weight: 700;
   font-size: 1.2rem;
 }
 
 .Btn:hover{
-  color: #324357;
-  border-left: 2px solid whitesmoke;
+  color: $mint;
+  border-left: 2px solid $light-mint;
   font-size: 1.3rem;
 }
 
@@ -88,8 +94,8 @@
  width: 30rem;
  height: 30rem;
  z-index: 100;
- box-shadow: 0px 0px 60px 60px rgba(255, 255, 255, 1);
- background-color: white;
+ box-shadow: 0px 0px 60px 60px rgba(246, 255, 248, 1);
+ background-color: $light-mint;
 
 }
 
@@ -112,6 +118,7 @@ text-align: right;
   font-size: 2rem;
   border: none;
   background-color: white;
+  color: $dark-green;
 
 }
 
@@ -140,8 +147,8 @@ text-align: right;
 }
 
 .loader {
-  border: 2px solid #f3f3f3; /* Light grey */
-  border-top: 2px solid black; /* Blue */
+  border: 2px solid #f3f3f3;
+  border-top: 2px solid black;
   border-radius: 50%;
   width: 1rem;
   height: 1rem;
